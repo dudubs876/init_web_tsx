@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "experimentalDecorators": true,
+        "jsx": "react",
+        "lib": [
+            "es2015",
+            "dom",
+            "es2015",
+            "dom"
+        ],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "outDir": "dist",
+        "paths": {
+            "pettager/*": [
+                "src/*"
+            ],
+            "tsdabs/*": [
+                "tsdabs/*"
+            ]
+        },
+        "rootDirs": [
+            "node_modules"
+        ],
+        "target": "es5",
+        "types": [
+            "jquery",
+            "bootstrap",
+            "node",
+            "react",
+            "react-dom"
+        ]
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "include": [
+        "src"
+    ]
+}

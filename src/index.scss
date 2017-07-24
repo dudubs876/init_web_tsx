@@ -1,0 +1,46 @@
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+
+@import "~bootstrap/scss/bootstrap";
+
+.image-input {
+  @extend .rounded, .p-1;
+  border: 1px solid $btn-secondary-border;
+  width: 200px;
+  text-align: center;
+
+  .image-empty {
+    @extend .fa, .fa-picture-o;
+    font-size: 80px;
+  }
+
+  .image-options {
+    a {
+      @extend .btn, .btn-sm, .btn-secondary, .mt-1;
+      display: block;
+    }
+  }
+  img {
+    @extend .rounded;
+    width: 100%;
+
+  }
+}
+
+
+.ps-middle {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.ps-center {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.ps-center-middle {
+  @extend .ps-middle, .ps-center;
+  transform: translate(-50%, -50%);
+}
